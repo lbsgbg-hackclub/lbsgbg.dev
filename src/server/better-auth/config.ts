@@ -45,7 +45,7 @@ export const auth = betterAuth({
 					clientSecret: env.BETTER_AUTH_HACK_CLUB_CLIENT_SECRET,
 					authorizationUrl: "https://account.hackclub.com/oauth/authorize",
 					tokenUrl: "https://account.hackclub.com/oauth/token",
-					redirectURI: `${env.NODE_ENV === "production" ? "https://" : "http://"}${env.NEXT_PUBLIC_VERCEL_URL || "localhost:3000"}/api/auth/callback/hack-club`,
+					redirectURI: `${env.NODE_ENV === "production" ? "https://" : "http://"}${env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL || "localhost:3000"}/api/auth/callback/hack-club`,
 					scopes: [
 						"openid",
 						"email",

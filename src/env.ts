@@ -10,9 +10,9 @@ export const env = createEnv({
 				: z.string().optional(),
 		BETTER_AUTH_HACK_CLUB_CLIENT_ID: z.string(),
 		BETTER_AUTH_HACK_CLUB_CLIENT_SECRET: z.string(),
-		UPSTASH_REDIS_REST_URL: z.string().url(),
+		UPSTASH_REDIS_REST_URL: z.string(),
 		UPSTASH_REDIS_REST_TOKEN: z.string(),
-		DATABASE_URL: z.string().url(),
+		DATABASE_URL: z.string(),
 		NODE_ENV: z
 			.enum(["development", "test", "production"])
 			.default("development"),
@@ -24,11 +24,11 @@ export const env = createEnv({
 	 * `NEXT_PUBLIC_`.
 	 */
 	client: {
-		NEXT_PUBLIC_VERCEL_URL: z.string().optional(),
+		NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: z.string().optional(),
 	},
 
 	experimental__runtimeEnv: {
-		NEXT_PUBLIC_VERCEL_URL: process.env.NEXT_PUBLIC_VERCEL_URL,
+		NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: process.env.NEXT_PUBLIC_VERCEL_URL,
 	},
 
 	/**
