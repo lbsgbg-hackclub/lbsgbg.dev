@@ -8,5 +8,5 @@ export default {
 	dbCredentials: {
 		url: env.DATABASE_URL,
 	},
-	tablesFilter: ["lbsgbg-hc_*"],
+	tablesFilter: ["lbsgbg-dev_*"],
 } satisfies Config;
