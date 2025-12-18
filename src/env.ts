@@ -28,7 +28,7 @@ export const env = createEnv({
 	},
 
 	experimental__runtimeEnv: {
-		NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: process.env.NEXT_PUBLIC_VERCEL_URL,
+		NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL,
 	},
 
 	/**
