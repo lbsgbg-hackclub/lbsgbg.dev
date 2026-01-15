@@ -162,7 +162,7 @@ export function MeetingSection() {
 
 					<Card className="rounded-none border bg-background/60 p-6 backdrop-blur">
 						<h3 className="font-semibold text-lg">
-							Registrera
+							Intresseanmälan
 							<p className="mb-4 text-gray-600 text-sm">(frivilligt)</p>
 						</h3>
 
@@ -205,7 +205,7 @@ export function MeetingSection() {
 								{rsvpMutation.isSuccess && "✓ Vi ses!"}
 								{!rsvpMutation.isPending &&
 									!rsvpMutation.isSuccess &&
-									"Jag kommer"}
+									"Jag är intresserad!"}
 							</Button>
 							{rsvpMutation.isError && (
 								<p className="text-red-500 text-sm">
